@@ -1,0 +1,31 @@
+# PBS flags
+queue: express
+project: v45
+walltime: 0:10:00
+ncpus: 1920
+mem: 3200GB
+jobname: gfdl_1080_kds50
+
+#collate_walltime: 10:00:00
+#collate_mem: 16GB
+collate_walltime: 4:00:00
+collate_mem: 30GB
+collate_ncpus: 16
+collate_queue: express
+collate_flags: -n4 -z -m -r
+collate: true
+
+runlog: true
+
+# Model config
+model: mom
+shortpath: /short/v45
+exe: mom51_sis_xgrid
+input: 
+    - mom025/levels_kds50
+    - /short/v45/pas561/mom/input/gfdl_nyf_1080
+
+# Misc
+stacksize: unlimited
+
+qsub_flags: -lother=hyperthread
