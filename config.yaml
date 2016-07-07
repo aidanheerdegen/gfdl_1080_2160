@@ -20,7 +20,7 @@ runlog: true
 # Model config
 model: mom
 shortpath: /short/v45
-exe: mom51_sis_xgrid
+exe: fms_MOM_SIS.intel14.fpe3.O2
 input: 
     - mom025/levels_kds50
     - /short/v45/pas561/mom/input/gfdl_nyf_1080
