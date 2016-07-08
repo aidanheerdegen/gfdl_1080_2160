@@ -258,7 +258,7 @@
 /
 
  &ocean_model_nml
-	dt_ocean = 1800,
+	dt_ocean = 300,
 	time_tendency='twolevel'
 	vertical_coordinate='zstar'
 	baroclinic_split = 1
