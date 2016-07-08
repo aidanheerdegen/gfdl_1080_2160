@@ -522,6 +522,7 @@
 	t_max_limit =32.0
 	s_min_limit =2.0
 	s_max_limit =42.0
+    use_tempsalt_check_range=.true.
 /
 
  &ocean_thickness_nml
