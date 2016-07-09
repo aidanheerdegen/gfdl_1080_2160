@@ -106,7 +106,7 @@
 /
 
  &ocean_advection_velocity_nml
-	max_advection_velocity=.50
+	max_advection_velocity=.20
 /
 
  &ocean_albedo_nml
