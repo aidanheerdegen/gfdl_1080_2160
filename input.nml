@@ -1,5 +1,5 @@
  &coupler_nml
-        months = 12,
+        months = 24,
         days   = 0,
         current_date = 1,1,1,0,0,0,
         calendar = 'noleap',
@@ -263,12 +263,12 @@
 /
 
  &ocean_model_nml
-	dt_ocean = 1800,
+	dt_ocean = 3600,
 	time_tendency='twolevel'
 	vertical_coordinate='zstar'
 	baroclinic_split = 1
 	surface_height_split = 1
-	barotropic_split = 80
+	barotropic_split = 140
 	debug=.false.
 	layout = 64, 30
 	io_layout = 64, 30
