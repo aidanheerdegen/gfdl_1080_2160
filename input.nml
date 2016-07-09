@@ -587,7 +587,7 @@
 	truncate_verbose=.true.
 	truncate_velocity_value=2.0
 	adams_bashforth_third=.true.
-	max_cgint=1.5
+	max_cgint=1.0
 	zero_tendency=.false.
 	zero_tendency_implicit=.false.
 	zero_tendency_explicit_a=.false.
