@@ -263,12 +263,12 @@
 /
 
  &ocean_model_nml
-	dt_ocean = 3600,
+	dt_ocean = 2400,
 	time_tendency='twolevel'
 	vertical_coordinate='zstar'
 	baroclinic_split = 1
 	surface_height_split = 1
-	barotropic_split = 140
+	barotropic_split = 170
 	debug=.false.
 	layout = 64, 30
 	io_layout = 64, 30
