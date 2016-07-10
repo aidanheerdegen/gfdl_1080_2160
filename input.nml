@@ -1,10 +1,10 @@
  &coupler_nml
-        months = 36,
+        months = 24,
         days   = 0,
         current_date = 1,1,1,0,0,0,
         calendar = 'noleap',
-        dt_cpld = 2400,
-        dt_atmos = 2400,
+        dt_cpld = 1800,
+        dt_atmos = 1800,
         do_atmos = .false.,
         do_land = .false.,   
         do_ice = .true.,
@@ -65,7 +65,7 @@
 /
 
  &ice_model_nml
-       nsteps_dyn=72
+       nsteps_dyn=288
        nsteps_adv=1
        num_part=6
        spec_ice=.false.
@@ -78,7 +78,7 @@
        wd_turn=0.0
        do_icebergs = .false.
        layout = 64, 30
-       io_layout = 64, 30
+       io_layout = 16, 10
 /
 
  &icebergs_nml
@@ -263,15 +263,15 @@
 /
 
  &ocean_model_nml
-	dt_ocean = 2400,
+	dt_ocean = 1800,
 	time_tendency='twolevel'
 	vertical_coordinate='zstar'
 	baroclinic_split = 1
 	surface_height_split = 1
-	barotropic_split = 170
+	barotropic_split = 120
 	debug=.false.
 	layout = 64, 30
-	io_layout = 64, 30
+	io_layout = 16, 10
 /
 
  &ocean_momentum_source_nml
@@ -554,7 +554,7 @@
 
  &ocean_tracer_diag_nml
 	tracer_conserve_days=30.0      
-	diag_step=4320
+	diag_step=36
 	do_bitwise_exact_sum=.false.
 /
 
@@ -576,7 +576,7 @@
 
  &ocean_velocity_diag_nml
 	debug_this_module=.false.
-	diag_step=4320
+	diag_step=36
 	energy_diag_step=4320
 	max_cfl_value=100.0
 	large_cfl_value=10.0
