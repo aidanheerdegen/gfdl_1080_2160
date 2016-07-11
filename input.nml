@@ -1,6 +1,6 @@
  &coupler_nml
-        months = 0,
-        days   = 1,
+        months = 36,
+        days   = 0,
         current_date = 1,1,1,0,0,0,
         calendar = 'noleap',
         dt_cpld = 2400,
@@ -554,7 +554,7 @@
 
  &ocean_tracer_diag_nml
 	tracer_conserve_days=30.0      
-	diag_step=36
+	diag_step=72
 	do_bitwise_exact_sum=.false.
 /
 
@@ -567,7 +567,7 @@
 	age_tracer_max_init=0.
 	frazil_heating_before_vphysics=.false.
 	frazil_heating_after_vphysics=.true.
-    use_tempsalt_check_range=.true.
+    use_tempsalt_check_range=.false.
 /
 
  &ocean_velocity_advect_nml
