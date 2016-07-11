@@ -1,6 +1,6 @@
  &coupler_nml
-        months = 60,
-        days   = 0,
+        months = 0,
+        days   = 1,
         current_date = 1,1,1,0,0,0,
         calendar = 'noleap',
         dt_cpld = 2880,
@@ -174,7 +174,7 @@
 	equatorial_zonal=.false.
 	bottom_5point=.false.
 	ncar_boundary_scaling=.true.
-	ncar_boundary_scaling_read=.true.
+	ncar_boundary_scaling_read=.false.
 	ncar_rescale_power=2
 	ncar_vconst_4=2.e-8
 	ncar_vconst_5=5
@@ -263,12 +263,12 @@
 /
 
  &ocean_model_nml
-	dt_ocean = 2880,
+	dt_ocean = 2400,
 	time_tendency='twolevel'
 	vertical_coordinate='zstar'
 	baroclinic_split = 1
 	surface_height_split = 1
-	barotropic_split = 150
+	barotropic_split = 120
 	debug=.false.
 	layout = 64, 30
 	io_layout = 16, 10
