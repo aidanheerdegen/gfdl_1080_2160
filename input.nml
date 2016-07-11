@@ -174,7 +174,7 @@
 	equatorial_zonal=.false.
 	bottom_5point=.false.
 	ncar_boundary_scaling=.true.
-	ncar_boundary_scaling_read=.false.
+	ncar_boundary_scaling_read=.true.
 	ncar_rescale_power=2
 	ncar_vconst_4=2.e-8
 	ncar_vconst_5=5

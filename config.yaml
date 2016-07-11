@@ -2,8 +2,8 @@
 queue: express
 project: x77
 walltime: 0:30:00
-ncpus: 1920
-mem: 3200GB
+ncpus: 1477
+mem: 2900GB
 jobname: gfdl_1080_kds50
 
 #collate_walltime: 10:00:00
@@ -22,8 +22,11 @@ model: mom
 shortpath: /short/v45
 exe: fms_MOM_SIS.intel14.fpe3.O2
 input: 
+    - mom025/mask_1920
     - mom025/levels_kds50
-    - /short/v45/pas561/mom/input/gfdl_nyf_1080
+    - mom025/climatology  
+    - mom025/mosaic
+    - cnyf2
 
 # Misc
 stacksize: unlimited

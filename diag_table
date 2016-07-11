@@ -19,7 +19,7 @@ MOM4p1_CORE_IAF_v20120531_0849_noRestore_runoff_fix
 "ocean_model","kmu","kmu",           "ocean_grid","all",.false.,"none",2
 "ocean_model","drag_coeff","drag_coeff","ocean_grid","all",.false.,"none",2
 #==========================================================================
-"ocean_model","ncar_rescale","ncar_rescale","ocean_daily","all",.true.,"none",1
+# "ocean_model","ncar_rescale","ncar_rescale","ocean_daily","all",.true.,"none",1
 # Prognostic fields:
 # 3d fields
 "ocean_model","geolon_t","geolon_t", "ocean","all",.false.,"none",2
