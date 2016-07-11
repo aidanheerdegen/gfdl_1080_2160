@@ -1,10 +1,10 @@
  &coupler_nml
-        months = 36,
+        months = 60,
         days   = 0,
         current_date = 1,1,1,0,0,0,
         calendar = 'noleap',
-        dt_cpld = 2400,
-        dt_atmos = 2400,
+        dt_cpld = 2880,
+        dt_atmos = 2880,
         do_atmos = .false.,
         do_land = .false.,   
         do_ice = .true.,
@@ -65,7 +65,7 @@
 /
 
  &ice_model_nml
-       nsteps_dyn=288
+       nsteps_dyn=432
        nsteps_adv=1
        num_part=6
        spec_ice=.false.
@@ -263,12 +263,12 @@
 /
 
  &ocean_model_nml
-	dt_ocean = 2400,
+	dt_ocean = 2880,
 	time_tendency='twolevel'
 	vertical_coordinate='zstar'
 	baroclinic_split = 1
 	surface_height_split = 1
-	barotropic_split = 120
+	barotropic_split = 150
 	debug=.false.
 	layout = 64, 30
 	io_layout = 16, 10
