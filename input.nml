@@ -50,6 +50,7 @@
 	fileset_write='multi'
 	max_files_r = 700
 	max_files_w = 700
+    checksum_required=.false.
 /
 
  &fms_nml
