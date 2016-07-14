@@ -4,7 +4,7 @@ MOM4p1_CORE_IAF_v20120531_0849_noRestore_runoff_fix
 "ice_daily",       24,  "hours",  1, "days", "time",
 "ice_month",        1,  "months", 1, "days", "time",
 "ocean",            1,  "months", 1, "days", "time",
-"ocean_daily",     24,  "hours",  1, "days", "time",
+"ocean_daily",     2400,  "seconds",  1, "days", "time",
 "ocean_grid",      -1,  "months", 1, "days", "time",
 "ocean_scalar",     1,  "months", 1, "days", "time",
 "ocean_model","geolon_t","geolon_t", "ocean_grid","all",.false.,"none",2
@@ -68,12 +68,16 @@ MOM4p1_CORE_IAF_v20120531_0849_noRestore_runoff_fix
  "ocean_model","mld","mld",                          "ocean","all",.true.,"none",2
 # "ocean_model","mld_dtheta","mld_dtheta",            "ocean","all",.true.,"none",2
 #
-# "ocean_model","tau_x","tau_x"     , "ocean_daily","all",.false.,"none",2
-# "ocean_model","tau_y","tau_y"     , "ocean_daily","all",.false.,"none",2                   
-#"ocean_model","geolon_t","geolon_t", "ocean_daily","all",.false.,"none",2
-#"ocean_model","geolat_t","geolat_t", "ocean_daily","all",.false.,"none",2
-#"ocean_model","geolon_c","geolon_c", "ocean_daily","all",.false.,"none",2
-#"ocean_model","geolat_c","geolat_c", "ocean_daily","all",.false.,"none",2
+"ocean_model","tau_x","tau_x"     , "ocean_daily","all",.false.,"none",2
+"ocean_model","tau_y","tau_y"     , "ocean_daily","all",.false.,"none",2                   
+"ocean_model","geolon_t","geolon_t", "ocean_daily","all",.false.,"none",2
+"ocean_model","geolat_t","geolat_t", "ocean_daily","all",.false.,"none",2
+"ocean_model","geolon_c","geolon_c", "ocean_daily","all",.false.,"none",2
+"ocean_model","geolat_c","geolat_c", "ocean_daily","all",.false.,"none",2
+"ocean_model","temp","temp",            "ocean_daily","all",.true.,"none",2
+"ocean_model","salt","salt",            "ocean_daily","all",.true.,"none",2
+"ocean_model","u","u",                  "ocean_daily","all",.true.,"none",2
+"ocean_model","v","v",                  "ocean_daily","all",.true.,"none",2
 #
 # td 12/7/11 Comment these out for test runs
 #
