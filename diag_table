@@ -68,8 +68,8 @@ MOM4p1_CORE_IAF_v20120531_0849_noRestore_runoff_fix
  "ocean_model","mld","mld",                          "ocean","all",.true.,"none",2
 # "ocean_model","mld_dtheta","mld_dtheta",            "ocean","all",.true.,"none",2
 #
-"ocean_model","tau_x","tau_x"     , "ocean_daily","all",.false.,"none",2
-"ocean_model","tau_y","tau_y"     , "ocean_daily","all",.false.,"none",2                   
+# "ocean_model","tau_x","tau_x"     , "ocean_daily","all",.false.,"none",2
+# "ocean_model","tau_y","tau_y"     , "ocean_daily","all",.false.,"none",2                   
 "ocean_model","geolon_t","geolon_t", "ocean_daily","all",.false.,"none",2
 "ocean_model","geolat_t","geolat_t", "ocean_daily","all",.false.,"none",2
 "ocean_model","geolon_c","geolon_c", "ocean_daily","all",.false.,"none",2
