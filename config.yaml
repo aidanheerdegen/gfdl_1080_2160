@@ -26,6 +26,7 @@ input:
     - mom025/levels_50
     - mom025/climatology  
     - mom025/mosaic
+    - mom025/initial_conditions
     - cnyf2
 
 # Misc
