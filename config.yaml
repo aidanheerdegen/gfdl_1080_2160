@@ -1,19 +1,19 @@
 # PBS flags
-queue: normal
-project: x77
-walltime: 5:00:00
-ncpus: 1477
-mem: 2900GB
-jobname: gfdl_1080_kds50
+queue: express
+project: v45
+walltime: 1:00:00
+ncpus: 1604
+mem: 3208GB
+jobname: gfdl_2160
 
-#collate_walltime: 10:00:00
-#collate_mem: 16GB
-collate_walltime: 4:00:00
-collate_mem: 30GB
-collate_ncpus: 16
-collate_queue: express
-collate_flags: -n4 -z -m -r
-collate: true
+collate:
+    walltime: 1:00:00
+    mem: 32GB
+    ncpus: 16
+    queue: express
+    flags: -v
+    mpi: true
+    restart: true
 
 runlog: true
 
@@ -22,8 +22,8 @@ model: mom
 shortpath: /short/v45
 exe: fms_MOM_SIS.intel14.fpe3.O2
 input: 
-    - mom025/mask_1920
-    - mom025/levels_kds50
+    - mom025/mask_2160
+    - mom025/levels_50
     - mom025/climatology  
     - mom025/mosaic
     - cnyf2
